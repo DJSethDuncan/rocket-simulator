@@ -7,10 +7,45 @@ html
 		link(rel='stylesheet', href='/stylesheets/style.css')
 	body
 		block content
+		button(id="launchRocket" class="btn btn-danger") Launch
+
+		div(id="telemetry" style="display:none;")
+			div(class="row")
+				div(class="col-sm-12")
+					div(class="panel panel-primary text-center")
+						div(class="panel-heading") Details
+						table(class="table table-striped")
+							thead
+								tr
+									th(class="text-center") Acceleration
+									th(class="text-center") Altitude
+									th(class="text-center") Mass
+							tr
+								td
+									div(id="liveAcceleration" class="panel-body")
+								td
+									div(id="liveAltitude" class="panel-body")
+								td
+									div(id="liveMass" class="panel-body")
+
+			div(class="row")
+				div(class="col-sm-4")
+					div(id="velocityDial" style="max-height:250px;")
+					div(id="fuelDial" style="max-height:250px;")
+
+				div(class="col-sm-8")
+					div(class="panel panel-primary text-center")
+						div(class="panel-heading") Graphs
+						table
+							tr
+								td Altitude
+								div(id="altitudeChart")
+
+		div(id="charts" style="display:none;")
 
 		script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
-		script(src="node_modules/highcharts/highcharts.js")
-		script(src="node_modules/highcharts/highcharts-more.js")
-		script(src="node_modules/highcharts/modules/solid-gauge.js")
+		script(src="https://code.highcharts.com/highcharts.js")
+		script(src="https://code.highcharts.com/highcharts-more.js")
+		script(src="https://code.highcharts.com/modules/solid-gauge.js")
 		script(src="/javascripts/rocket.js")
