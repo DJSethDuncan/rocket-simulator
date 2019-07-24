@@ -1,6 +1,6 @@
 {
   "name": "rocket-simulator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -12,5 +12,9 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "A rocket simulation",
+  "main": "app.js",
+  "author": "Seth Duncan",
+  "license": "ISC"
 }
