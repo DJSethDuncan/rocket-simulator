@@ -1,7 +1,7 @@
 # rocket-simulator
 A rocket simulator using Highcharts
 
-[Live Example][https://rocket-simulator.sethduncan.com]
+[Live Example](https://rocket-simulator.sethduncan.com)
 
 * npm install
 * npm start
